@@ -20,6 +20,51 @@ canvas {
     border: 1px solid rgb(71, 71, 71);
 }
 
+.players {
+    max-width: 100%;
+    display: flex;
+    font-family: 'Consolas';
+    color: #fff;
+}
+
+.cell {
+    width: 33.3333%;
+    padding: 10px;
+    position: relative;
+}
+
+.score {
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+.player1 {
+    text-align: left;
+}
+
+.player2 {
+    text-align: right;
+}
+
+.coords p {
+    color: gray;
+    width: 100px;
+    text-align: right;
+    padding-right: 10px;
+}
+.inline {
+    display: flex;
+}
+
+.coords {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-family: 'Tahoma';
+    display: none;
+}
+
 h1 {
     font-family: 'Consolas';
     color: gray;
@@ -27,6 +72,17 @@ h1 {
     padding: 10px;
     animation: start infinite linear 3s;
     user-select: none;
+}
+
+.scoreP {
+    position: absolute;
+    top: 0;
+    left: 37%;
+}
+
+.scored {
+    animation: scored infinite linear .95s;
+
 }
 
 @keyframes start {
@@ -38,5 +94,22 @@ h1 {
     }
     100% {
         opacity: 1;
+    }
+}
+
+@keyframes scored {
+    0% {
+        background-color: transparent;
+        transform: rotate(0);
+        font-size: 30px;
+    }
+    50% {
+        font-size: 35px;
+        transform: rotate(5deg);
+        color: green;
+    }
+    100% {
+        font-size: 30px;
+        transform: rotate(0);
     }
 }

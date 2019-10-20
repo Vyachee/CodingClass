@@ -8,9 +8,45 @@
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-
+    <div class="coords">
+        <div class="inline">
+            <p>Player 1:</p>
+            <div class="p1">x:y</div>
+        </div>
+        <div class="inline">
+            <p>Player 2:</p>
+            <div class="p2">x:y</div>
+        </div>
+        <div class="inline">
+            <p>Ball:</p>
+            <div class="ball">x:y</div>
+        </div>
+        <div class="inline">
+            <p>diff:</p>
+            <div class="diff">-</div>
+        </div>
+        <div class="inline">
+            <p>diff2:</p>
+            <div class="diff2">-</div>
+        </div>
+        <div class="inline">
+            <p>score1:</p>
+            <div class="score1">0</div>
+        </div>
+        <div class="inline">
+            <p>score2:</p>
+            <div class="score2">0</div>
+        </div>
+    </div>
     <div class="container">
         <div>
+            <div class="players">
+                <div class="player1 cell">Player 1</div>
+                <div class="score cell">
+                    <p class="scoreP">0:0</p>
+                </div>
+                <div class="player2 cell">Player 2</div>
+            </div>
             <canvas height="700px" width="700px" id="canv"></canvas>
             <h1>press ENTER to start the game</h1>
         </div>
