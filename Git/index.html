@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="media/css/fonts.css">
     <link rel="stylesheet" href="media/css/main.css">
     <link rel="stylesheet" href="media/css/fa.css">
+    <link rel="stylesheet" href="media/css/simplebar.css">
     <style>
     
         .preloader {
@@ -48,7 +49,7 @@
     <div class="preloader">
         <div class="circle"></div>
     </div>
-<div class="scrollWrap">
+<div class="scrollWrap" ss-container>
     <header>
         <div class="nav">
             <a href="#" class="logo"><img src="media/img/logo.png" alt="EasyGit"></a>
@@ -171,6 +172,8 @@
 
                 <p>Создайте на диске папку с произвольным именем и перейдите в неё в Git Bash при помощи команды:</p>
                 <div class="bash_code">cd "путь до папки"</div>
+                <p>Инициализируем папку, как Git репозиторий:</p>
+                <div class="bash_code">git init</div>
                 <p>Создайте файл README.md, введя данную команду:</p>
                 <div class="bash_code">echo "Hello world!" >> README.md</div>
                 <p>Для создания локального коммита, нужно, чтобы в этом коммите что-то содержалось. Добавим в него все файлы, которые мы создали, при помощи команды:</p>
@@ -237,6 +240,7 @@
 </div>
     <script src="media/js/jq.js"></script>
     <script src="media/js/fa.js"></script>
+    <script src="media/js/simplebar.js"></script>
     <script src="media/js/js.js"></script>
     <script src="media/js/preloader.js"></script>
 </body>
