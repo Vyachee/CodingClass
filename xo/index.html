@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>x and o</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <div class="notification">
+        Нолик победил
+    </div>
+
+    <div class="restart">
+        <div>
+            <p id="won"></p>
+            <p>Нажмите, чтобы запустить игру</p>
+        </div>
+    </div>
+
+    <div class="score">
+        <!-- Score of Player 1 -->
+        <div class="score-cell">
+            <p>Нолик: <span id="p1">0</span></p>
+        </div>
+        <!-- Who's turn -->
+        <div class="score-cell">
+            <p>Сейчас ходит: <span id="turn">Крестик</span></p>
+        </div>
+        <!-- Score of Player 2 -->
+        <div class="score-cell">
+            <p>Крестик: <span id="p2">0</span></p>
+        </div>
+    </div>
+    <div class="flexWrap">
+        <div class="flexCenter">
+            <div class="field">
+                <div class="cell none" cell-num="1"></div>
+                <div class="cell none" cell-num="2"></div>
+                <div class="cell none" cell-num="3"></div>
+                <div class="cell none" cell-num="4"></div>
+                <div class="cell none" cell-num="5"></div>
+                <div class="cell none" cell-num="6"></div>
+                <div class="cell none" cell-num="7"></div>
+                <div class="cell none" cell-num="8"></div>
+                <div class="cell none" cell-num="9"></div>
+            </div>
+        </div>
+    </div>
+    <script src="jq.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>
