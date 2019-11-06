@@ -88,17 +88,6 @@ function logField() {
     console.log(s);
 }
 
-function notify(text) {
-    $('.notification').text(text).animate({
-        'right':'10px'
-    }, 1000);
-    setTimeout(() => {
-        $('.notification').animate({
-            'right':'-50%'
-        }, 1000);
-    }, 2500);
-}
-
 $('.cell').click(function(e) {
     if(!isStopped) {
         let numOfElem = $(e.currentTarget).attr('cell-num');
