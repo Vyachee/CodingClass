@@ -74,7 +74,14 @@ function isAnyoneWon() {
     // Else
 
     return 'no';
+}
 
+function isAllFilled() {
+    let row1 = field[0].indexOf(1);
+    let row2 = field[1].indexOf(1);
+    let row3 = field[2].indexOf(1);
+    if(row1 == row2 && row2 == row3 && row1 == -1) return true;
+    else return false;
 }
 
 function logField() {
@@ -106,6 +113,8 @@ $('.cell').click(function(e) {
             logField();
             
             let isWin = isAnyoneWon();
+            console.log(isWin);
+            console.log("filled: " + isAllFilled());
     
             if(isWin != 1) {
     
@@ -113,15 +122,31 @@ $('.cell').click(function(e) {
                 if(isWin == 'x') {
                     addScore('x');
                     $('#won').text('Крестик победил');
-                };
+                
+                    isStopped = true;
+                    $('.restart').css({
+                        'display':'flex'
+                    });
+                }
+
                 if(isWin == 'o') {
                     addScore('o');
                     $('#won').text('Нолик победил');
-                };
-                isStopped = true;
-                $('.restart').css({
-                    'display':'flex'
-                });
+                
+                    isStopped = true;
+                    $('.restart').css({
+                        'display':'flex'
+                    });
+                }
+
+                if(!isStopped && isAllFilled()) {
+                    $('#won').text('Ничья');
+                
+                    isStopped = true;
+                    $('.restart').css({
+                        'display':'flex'
+                    });
+                }
             }
         }        
     }
