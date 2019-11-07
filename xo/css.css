@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Tahoma';
     box-sizing: border-box;
+    user-select: none;
 }
 
 body {

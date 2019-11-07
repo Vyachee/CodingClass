@@ -1,4 +1,5 @@
 let turn = 'x';
+let dev = false;
 
 let score = {
     'o': 0,
@@ -110,11 +111,13 @@ $('.cell').click(function(e) {
                 $(this).addClass('o');
             }
             changeTurn();
-            logField();
             
             let isWin = isAnyoneWon();
-            console.log(isWin);
-            console.log("filled: " + isAllFilled());
+            if(dev) {
+                logField();
+                console.log(isWin);
+                console.log("filled: " + isAllFilled());
+            }
     
             if(isWin != 1) {
     
