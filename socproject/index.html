@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Приди - тебе помогут</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="media/css/main.css">
+    <style>
+        .preloader {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #1a1a1a;
+            z-index: 10;
+        }
+
+        .circle {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+            background-color: #fff;
+            animation: 2s infinite ease-in-out loader;
+        }
+
+        @keyframes loader {
+            0% {
+                transform: scale(1);
+                background-color: #fff;
+            }
+            25% {
+                transform: scale(0.5);
+                background-color: lightgray;
+            }
+            50% {
+                transform: scale(1.75);
+            }
+            75% {
+                transform: scale(0.5);
+                background-color: lightgray;
+            }
+            100% {
+                transform: scale(1);
+                background-color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="circle"></div>
+    </div>
+
+    <div class="wrap">
+        <section class="video-bg-container main-section">
+            <video src="media/video/times.mp4" autoplay muted loop></video>
+            <div class="flex-center">
+                <div class="r300 main-text">
+                    <p style="color: lightgray;">Программа социализации</p>
+                    <p><b>Приди</b> - тебе помогут</p>
+                </div>
+            </div>
+        </section>
+        <div class="mini-section whatis">
+            <div class="flex-center">
+                <div class="r400">
+                    <p>Программа направлена на подростков, находящихся в социально-опасном положении. Что же это такое?</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="explain"> 
+            <div class="container">
+                <h1>Социально-опасное положение - это</h1>
+                <p style="color: gray;">когда подросток:</p>
+                
+                <div class="tile mark">находится в обстановке, которая представляет опасность для его жизни или здоровья либо не отвечает требованиям к его воспитанию или содержанию</div>
+                <div class="tile mark">совершает правонарушения или антиобщественные действия – систематически употребляет наркотические средства, ПАВ, алкогольную и спиртосодержащую продукцию, занимается бродяжничеством или попрошайничеством, совершает иные действия, которые нарушают права и законные интересы других лиц. При этом меры, которые принимает образовательная организация по профилактике алкоголизма и употребления ПАВ, пресечению антиобщественного поведения, не дают результатов.</div>
+                <div class="tile mark">живет в обстановке, которая представляет опасность для его жизни и здоровья или не отвечает требованиям к его воспитанию и содержанию: 
+                    <p class="mark pl20">родители не исполняют или ненадлежаще исполняют обязанности по его воспитанию, обучению и содержанию и не следят за ребенком</p>
+                    <p class="mark pl20">у него нет местожительства</p>
+                </div>
+            </div>
+            <div class="smile">:(</div>
+        </section>
+
+        <div class="mini-section seeuself">
+            <div class="flex-center">
+                <p>Обнаружили себя или своих близких в социально-опасном положении? <b>Приходите</b>, мы поможем.</p>
+            </div>
+        </div>
+
+        <div class="mini-section contact">
+            <div class="flex-center">
+                <address>
+                    <p class="phone">+7 (999) 999-99-99</p>
+                    <p class="address">Адрес чего-то</p>
+                    <a href="https://vk.com/comeforhelp" target="_blank" class="vk">Группа ВКонтакте</a>
+                </address>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="media/js/jq.js"></script>
+    <script src="media/js/js.js"></script>
+</body>
+</html>

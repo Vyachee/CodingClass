@@ -1,0 +1,214 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.wrap {
+    width: 100%;
+}
+
+.r300 {
+    font-weight: 300;
+}
+
+.r400 {
+    font-weight: 400;
+}
+
+.r700 {
+    font-weight: 700;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.video-bg-container {
+    background-color: #000;
+    position: relative;
+}
+
+.video-bg-container video {
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.2;
+}
+
+.flex-center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.main-text {
+    display: none;
+}
+
+.main-section {
+    font-size: 2rem;
+}
+
+.main-section .flex-center div {
+    padding: 10px;
+}
+
+.mini-section {
+    width: 100%;
+    height: 20vh;
+    padding: 10px;
+    position: relative;
+}
+
+.whatis {
+    background-color: #7d9174;
+    font-size: 1.3rem;
+    color: #000;
+}
+
+.explain {
+    position: relative;
+}
+
+.explain h1 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: lightgray;
+}
+
+.explain .container {
+    padding: 30px;
+    height: 100%;
+    font-size: 1.3rem;
+    position: absolute;
+    z-index: 5;
+}
+
+.smile {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+    z-index: 1;
+    color: rgba(0, 0, 0, .05);
+    font-size: 24rem;
+    font-weight: 700;
+    transform: rotate(60deg);
+}
+
+.tile {
+    margin-bottom: 30px;
+}
+
+.mark::before {
+    content: '-';
+    padding: 10px;
+}
+
+.explain ul {
+    font-size: 2rem;
+}
+
+.seeuself {
+    background-color: #0a0a0a;
+    color: #fff;
+}
+
+.contact * {
+    background-color: #1f1f1f;
+    color: #fff;
+    font-style: normal;
+}
+
+.contact p {
+    margin-bottom: 10px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 700px) {
+    .explain h1{
+        font-size: 2.2rem;
+    }
+
+    .explain .container {
+        font-size: 1rem;
+    }
+
+    .smile {
+        font-size: 15rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    .main-section {
+        font-size: 1.35rem;
+    }
+
+    .explain h1{
+        font-size: 2rem;
+    }
+
+    .explain .container {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    .smile {
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    .main-section {
+        font-size: 1.35rem;
+    }
+
+    .explain h1 {
+        font-size: 2rem;
+    }
+
+    .explain .container {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    section.explain {
+        overflow-y: auto;
+    }
+
+    .smile {
+        font-size: 30px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .explain h1 {
+        font-size: 1.3rem;
+    }
+}
