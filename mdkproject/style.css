@@ -1,0 +1,30 @@
+body {
+    background-color: #d9d9d9;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+.logo img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.header {
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+.sidebar {
+    background-color: #c7c7c7;
+    padding: 10px;
+}
+
+.panel p {
+    font-size: 13px;
+}
+
+.preview {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
