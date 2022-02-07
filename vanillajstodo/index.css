@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tahoma', sans-serif;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+h4 {
+    margin-bottom: 10px;
+}
+
+input, button {
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 10px;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+}
+
+input {
+    border: 1px solid #ccc;
+    flex: 1;
+    transition: 0.15s;
+}
+input:focus {
+    border: 1px solid #9f9f9f;
+}
+button {
+    flex: 0;
+    min-width: 100px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+button:hover {
+    background-color: #dedede;    
+}
+
+.tasks-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.task .field {
+    flex: 1
+}
+
+.task .field.status {
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.field span {
+    color: #ccc;
+}
+.field p, .field input {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .task {
+        flex-direction: column;
+    }
+    .field {
+        margin-bottom: 10px;
+    }
+    .field:last-child {
+        margin-bottom: 0;
+    }
+
+    .container {
+        max-width: 95%;
+        margin: 10px auto;
+    }
+
+    .field.status {
+        width: 100%;
+        gap: 10px;
+
+    }
+    .field.status button {
+        flex: 1;
+        margin-left: 0;
+    }
+}
